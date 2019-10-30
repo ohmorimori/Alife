@@ -40,7 +40,7 @@ class MatrixVisualizer(object):
         return not self._canvas._closed
 
 if __name__ == '__main__':
-    v = MatrixVisualizer(600, 600)
-    while v:
+    visualizer = MatrixVisualizer(600, 600)
+    while visualizer:
         data = np.random.rand(256, 256)
-        v.update(data)
+        visualizer.update(data)
